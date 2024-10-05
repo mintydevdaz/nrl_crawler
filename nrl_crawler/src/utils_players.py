@@ -217,5 +217,5 @@ def get_player_webpages(
 ):
     teams = _unpack_team_lists(responses)
     hrefs = list(map(lambda x: x["url"], teams))
-    urls = list(map(lambda href: f"{base_url}{href}", hrefs))[300:330]
+    urls = list(map(lambda href: f"{base_url}{href}", hrefs))
     return request(urls, headers, "Player Sites")
