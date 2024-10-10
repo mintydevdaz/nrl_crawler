@@ -1,6 +1,6 @@
 # NRL Crawler
 
-A web crawler tailored to extract data from https://www.nrl.com/.
+A web crawler tailored to extract data from [NRL.com](https://www.nrl.com/).
 
 ## Why?
 I've created (and destroyed) numerous rough scripts to lift data from the NRL's website but decided there should be a more permanent solution made publicly available.
@@ -30,7 +30,7 @@ Output is automatically saved (in JSON) to **~/nrl_crawler/nrl_crawler/data**. M
 
 - The expectation is that users will want to scrape player data for the **Men's Premiership** only. The downside is that:
     
-    - the men's competition has over 500 regiestered players each season which is, in effect, 500+ requests.
+    - the men's competition has over 500 registered players each season which is, in effect, 500+ requests.
     - the web request object currently has limited functionality (e.g. unable to rotate headers and/or proxies, unable to throttle / backoff request speed etc).
     - it's possible that the server will block you while scraping.
 
